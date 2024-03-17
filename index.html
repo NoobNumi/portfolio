@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/custom-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>NoobNumi</title>
+</head>
+
+<body>
+    <main>
+        <div class="offcanvas offcanvas-start vh-100 d-md-block px-0 my-0" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo_sample.png" alt="Logo" height="40"
+                        class="d-inline-block align-text-top rounded">
+                </a>
+                <a href="#" class="btn-close pe-auto" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+            </div>
+            <ul class="nav d-flex flex-column gap-3 px-0 my-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        <span class="text-secondary">About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="text-secondary">Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="text-secondary">Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="btn btn-primary" href="#">Download CV</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container my-3 px-2 px-md-5">
+            <section class="d-flex flex-column justify-content-start w-100 mb-5" id="home">
+                <header>
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="/">
+                                <img src="/img/logo_sample.png" alt="Logo" height="50"
+                                    class="d-inline-block align-text-top rounded">
+                            </a>
+                            <ul class="nav justify-content-end d-none d-md-flex">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">
+                                        <span class="text-secondary">About</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skills">
+                                        <span class="text-secondary">Skills</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#projects">
+                                        <span class="text-secondary">Projects</span></a>
+                                </li>
+                                <li class="nav-item ms-3">
+                                    <a class="btn btn-primary" href="/nin_villamin_cv.pdf">Download CV</a>
+                                </li>
+                            </ul>
+                            <a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                role="button" aria-controls="offcanvasExample">
+                                <i class="fa-solid fa-bars fs-1 text-primary"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+
+                <div class="row my-5 px-3 px-md-3 d-flex align-items-center justify-content-between w-100 my-5">
+                    <div class="col-12 col-md-8">
+                        <span class="text-primary fw-medium">FRONT-END DEVELOPER</span>
+                        <h1 class="fw-bold my-3">Hi, I'm <span class="text-primary">Nin Villamin</span></h1>
+                        <span class="text-secondary letter">
+                            Front-end developer with a strong understanding of back-end for dynamic websites. Passionate
+                            about crafting user experiences. Flexible for full-stack if needed.
+                        </span>
+                        <ul class="nav d-flex my-5 gap-3">
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary rounded btn-lg"
+                                    href="https://www.facebook.com/ninnov.1128">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary rounded btn-lg"
+                                    href="https://www.linkedin.com/in/ni%C3%B1a-gillian-villamin-28632727a/">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary rounded btn-lg" href="https://github.com/NoobNumi">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary rounded btn-lg"
+                                    href="https://www.upwork.com/freelancers/~018372314f6c521661">
+                                    <i class="fa-brands fa-upwork"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="./img/profile.png" class="img-fluid">
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-flex flex-column justify-content-center w-100 mt-5 my-5 px-3 px-md-3" id="about">
+                <h4 class="text-primary fw-bold">About</h4>
+                <div class="row my-5 px-3 px-md-3 d-flex justify-content-between w-100">
+                    <div class="col-md-4 col-12 my-5">
+                        <img src="./img/profile2.png" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <span class="text-secondary">
+                            Based off the Philippines, I am currently studying Information Technology at <a
+                                href="https://bicol-u.edu.ph/" class="text-primary fw-medium text-decoration-none">Bicol
+                                University</a> and is an intern at Bicol University Information Communications
+                            Technology Office
+                            (ICTO) as a 22-year-old Graphics Designer and Front-end Developer.
+                        </span>
+                        <hr>
+                        <h4 class="text-secondary">Contact me</h4>
+                        <a href="mailto:numinum1128@gmail.com" class="text-primary text-decoration-none">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            numinum1128@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="d-flex flex-column justify-content-center w-100 mt-5 my-5 px-3 px-md-3" id="skills">
+                <h4 class="text-primary fw-bold">Skills</h4>
+                <ul class="d-flex nav align-items-center justify-content-center w-100 gap-5 my-5" id="dynamicList">
+                    <!-- List items will be inserted here by JavaScript -->
+                </ul>
+            </section>
+
+            <section class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3" id="projects">
+                <h4 class="text-primary fw-bold">Projects</h4>
+                <div class="container swiper my-5">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="https://pbs.twimg.com/profile_images/1592191638524366850/nOg3vyWy_400x400.jpg"
+                                        class="img-fluid" />
+                                </div>
+                                <a href="#" class="profile-details">
+                                    <div class="name-job">
+                                        <h3 class="name">David Cardlos</h3>
+                                        <h4 class="job">Full Stack Developer</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="https://pbs.twimg.com/profile_images/1592191638524366850/nOg3vyWy_400x400.jpg"
+                                        class="img-fluid" />
+                                </div>
+                                <a href="#" class="profile-details">
+                                    <div class="name-job">
+                                        <h3 class="name">David Cardlos</h3>
+                                        <h4 class="job">Full Stack Developer</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="https://pbs.twimg.com/profile_images/1592191638524366850/nOg3vyWy_400x400.jpg"
+                                        class="img-fluid" />
+                                </div>
+                                <a href="#" class="profile-details">
+                                    <div class="name-job">
+                                        <h3 class="name">David Cardlos</h3>
+                                        <h4 class="job">Full Stack Developer</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="https://pbs.twimg.com/profile_images/1592191638524366850/nOg3vyWy_400x400.jpg"
+                                        class="img-fluid" />
+                                </div>
+                                <a href="#" class="profile-details">
+                                    <div class="name-job">
+                                        <h3 class="name">David Cardlos</h3>
+                                        <h4 class="job">Full Stack Developer</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="https://pbs.twimg.com/profile_images/1592191638524366850/nOg3vyWy_400x400.jpg"
+                                        class="img-fluid" />
+                                </div>
+                                <a href="#" class="profile-details">
+                                    <div class="name-job">
+                                        <h3 class="name">David Cardlos</h3>
+                                        <h4 class="job">Full Stack Developer</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-5">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="">
+            <footer class="bg-body-tertiary outline-primary text-primary">
+                <div class="container p-4 pb-0 my-auto">
+                    <section class="mb-4">
+                        <a class="btn btn-outline-primary rounded btn-lg" href="https://www.facebook.com/ninnov.1128">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-outline-primary rounded btn-lg"
+                            href="https://www.linkedin.com/in/ni%C3%B1a-gillian-villamin-28632727a/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a class="btn btn-outline-primary rounded btn-lg" href="https://github.com/NoobNumi">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a class="btn btn-outline-primary rounded btn-lg"
+                            href="https://www.upwork.com/freelancers/~018372314f6c521661">
+                            <i class="fa-brands fa-upwork"></i>
+                        </a>
+                    </section>
+                </div>
+                <div class="container p-4">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <a class="navbar-brand d-flex align-items-center mb-2 gap-2" href="/">
+                                <img src="/img/logo_sample.png" alt="Logo" height="50"
+                                    class="d-inline-block align-text-top rounded">
+                            </a>
+                            <p class="text-secondary">
+                                Crafting visions into digital reality, one pixel at a time. Let's collaborate on
+                                bringing your ideas to life. Reach out and let's create something extraordinary
+                                together.
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase fw-bold">Quick Links</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#home" class="text-decoration-none text-primary">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="text-decoration-none text-primary">About</a>
+                                </li>
+                                <li>
+                                    <a href="#skills" class="text-decoration-none text-primary">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#projects" class="text-decoration-none text-primary">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    <span class="text-primary">Made with <i class="fa-solid fa-heart  text-danger"></i> using Bootstrap
+                        5</span>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/assets/populate-data.js"></script>
+    <script src="/assets/swiper.js"></script>
+    <script src="/assets/animation.js"></script>
+</body>
+
+</html>
