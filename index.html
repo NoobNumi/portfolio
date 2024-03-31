@@ -24,7 +24,7 @@
                     <img src="./img/logo_sample.png" alt="Logo" height="40"
                         class="d-inline-block align-text-top rounded">
                 </a>
-                <a href="#" class="btn-close pe-auto" data-bs-dismiss="offcanvas" aria-label="Close"></a>
+                <button type="button" class="btn-close pe-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <ul class="nav d-flex flex-column gap-3 px-0 my-0">
                 <li class="nav-item">
@@ -48,7 +48,7 @@
             </ul>
         </div>
 
-        <div class="container my-3 px-2 px-md-5">
+        <div class="container my-3">
             <section class="d-flex flex-column justify-content-start w-100 mb-5" id="home">
                 <header>
                     <nav class="navbar">
@@ -75,8 +75,7 @@
                                     <a class="btn btn-primary" href="./nin_villamin_cv.pdf">Download CV</a>
                                 </li>
                             </ul>
-                            <a class="d-block d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                                role="button" aria-controls="offcanvasExample">
+                            <a class="d-block d-md-none" id="OpenMenu" style="cursor: pointer;">
                                 <i class="fa-solid fa-bars fs-1 text-primary"></i>
                             </a>
                         </div>
@@ -124,7 +123,7 @@
             </section>
 
             <section class="d-flex flex-column justify-content-center w-100 my-5 px-3 px-md-3" id="about">
-                <h4 class="text-primary fw-bold">About</h4>
+                <h4 class="text-primary fw-bold mt-5">About</h4>
                 <div class="row my-5 px-3 px-md-3 d-flex justify-content-between w-100">
                     <div class="col-md-4 col-12 my-5">
                         <img src="./img/profile2.png" class="img-fluid">
@@ -149,14 +148,14 @@
 
 
             <section class="d-flex flex-column justify-content-center w-100 mt-5 my-5 px-3 px-md-3" id="skills">
-                <h4 class="text-primary fw-bold">Skills</h4>
+                <h4 class="text-primary fw-bold mt-5">Skills</h4>
                 <ul class="d-flex nav align-items-center justify-content-center w-100 gap-5 my-5" id="dynamicList">
                     <!-- List items will be inserted here by JavaScript -->
                 </ul>
             </section>
 
             <section class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3" id="projects">
-                <h4 class="text-primary fw-bold">Projects</h4>
+                <h4 class="text-primary fw-bold mt-5">Projects</h4>
                 <div class="container swiper my-5">
                     <div class="slide-container">
                         <div class="card-wrapper swiper-wrapper">
@@ -290,11 +289,11 @@
             </footer>
         </section>
     </main>
+    <script src="./assets/animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/bootstrap.bundle.js"></script>
     <script src="./assets/populate-data.js"></script>
     <script src="./assets/swiper.js"></script>
-    <script src="./assets/animation.js"></script>
 </body>
 
 </html>
