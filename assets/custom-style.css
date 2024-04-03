@@ -122,6 +122,11 @@ body {
     overflow: hidden;
 }
 
+.view-demo {
+    height: 700px;
+}
+
+
 @keyframes slide-up {
     0% {
         transform: translateY(100%);
@@ -143,5 +148,9 @@ body {
 @media screen and (max-width: 768px) {
     .swiper-navBtn {
         display: none;
+    }
+
+    .view-demo {
+        height: 100%;
     }
 }
