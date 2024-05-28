@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/custom-style.css">
+    <link rel="stylesheet" href="./assets/borderless.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="./assets/email.js"></script>
     <title>NoobNumi</title>
 </head>
 
@@ -406,42 +410,35 @@
                     <h4 class="text-primary fw-bold mt-5">Contact</h4>
                 </div>
                 <div class="row d-flex w-100 justify-content-between">
-                    <div class="col-lg-5 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                    <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
                         data-aos-delay="100">
-                        <img src="https://cdn.vectorstock.com/i/1000x1000/16/01/graphic-cartoon-character-contact-us-vector-34981601.webp"
-                            alt="" class="img-fluid">
+                        <img src="./img/portfolio_graphics_numinum.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center aos-init aos-animate"
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center aos-init aos-animate"
                         data-aos="fade-up" data-aos-delay="200">
-                        <form action="forms/contact.php" method="post" role="form"
-                            class="php-email-form form rounded-3">
+                        <div class="php-email-form form rounded-3">
                             <div class="row my-3">
                                 <div class="form-group col-md-6">
                                     <label for="name" class="mb-2">Name</label>
-                                    <input type="text" name="name" class="form-control outline-none" id="name"
+                                    <input type="text" name="name" class="form-control outline-none" id="fullname"
                                         required="" placeholder="John Doe">
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="name" class="mb-2">Email</label>
-                                    <input type="email" class="form-control outline-none" name="email" id="email"
+                                    <input type="email" class="form-control outline-none" name="email" id="email_id"
                                         required="" placeholder="johndoe@gmail.com">
                                 </div>
                             </div>
                             <div class="form-group my-3">
-                                <label for="name" class="mb-2">Subject</label>
-                                <input type="text" class="form-control" outline-none name="subject" id="subject"
-                                    required="" placeholder="Subject...">
-                            </div>
-                            <div class="form-group my-3">
                                 <label for="name" class="mb-2">Message</label>
-                                <textarea class="form-control outline-none" name="message" rows="10" required=""
-                                    placeholder="Type your message..."></textarea>
+                                <textarea class="form-control outline-none" name="message" rows="10" id="message"
+                                    required="" placeholder="Type your message..."></textarea>
                             </div>
                             <div class="text-center mt-3 my-3">
-                                <a class="btn btn-primary rounded-pill px-3 py-2">Send Message<i
-                                        class="ms-2 fa-solid fa-paper-plane"></i></a>
+                                <button class="btn btn-primary rounded-pill px-3 py-2" onclick="sendMail()">Send
+                                    Message<i class="ms-2 fa-solid fa-paper-plane"></i></button>
                             </div>
-                        </form>
+                        </div>
                     </div>
 
                 </div>
@@ -526,6 +523,9 @@
     <script src="./assets/bootstrap.bundle.js"></script>
     <script src="./assets/populate-data.js"></script>
     <script src="./assets/swiper.js"></script>
+    <script src="./assets/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="./assets/send_mail.js"></script>
+
 </body>
 
 </html>
