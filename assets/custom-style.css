@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Path: assets/custom-style.css */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* Scrollbar Styling */
@@ -126,6 +126,138 @@ body {
     height: 700px;
 }
 
+.toggle {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.toggle input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.toggle label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.toggle label:before {
+    content: "";
+    width: 70px;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #ddd;
+    box-shadow: inset -30px 0 0 #666;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: 0.25s ease-in;
+}
+
+.toggle label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 50%;
+    background: #fffdfd;
+    box-shadow: inset -8px -5px #333;
+    transition: 0.2s ease-in-out;
+}
+
+.toggle input[type="checkbox"]:checked+label:before {
+    box-shadow: inset 30px 0 0 #ffeb00;
+}
+
+.toggle input[type="checkbox"]:checked+label:after {
+    box-shadow: inset 0 0 0 2px #fff;
+    background: #ffbc00;
+    left: 40px;
+    border: 2px dashed #fff;
+}
+
+.graphic-circle_1 {
+    height: 300px;
+    top: -50px;
+    right: 0;
+}
+
+.graphic-circle_2 {
+    height: 600px;
+    top: 300px;
+    left: -300px;
+}
+
+
+.blink {
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+.header-sub-title {
+    color: #fff;
+    font-family: "Courier";
+    font-size: 30px;
+    padding: 0.1em;
+}
+
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: #149ddd;
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 1px solid #149ddd;
+}
+
+.services .title {
+    margin-left: 80px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.form {
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form input {
+    box-shadow: none;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+
 
 @keyframes slide-up {
     0% {
@@ -144,11 +276,23 @@ body {
     /* Reduced from 2s to 1s */
 }
 
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    /* Also remove the default box-shadow */
+}
 
 @media screen and (max-width: 768px) {
     .swiper-navBtn {
         display: none;
     }
+
+    .graphic-circle_2 {
+        height: 400px;
+        top: 400px;
+        left: -200px;
+    }
+
 
     .view-demo {
         height: 100%;

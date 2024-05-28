@@ -1,16 +1,14 @@
 var ul = document.querySelector('#dynamicList');
 var data = [
     { icon: 'fa-brands fa-html5', color: '#ff5722', text: 'HTML5' },
+    { icon: 'fa-brands fa-css3-alt', color: '#2965f1', text: 'CSS3' },
     { icon: 'fa-brands fa-js', color: '#f7df1e', text: 'Javascript' },
     { icon: 'lni lni-mysql', color: '#00546b', text: 'MySQL' },
     { icon: 'fa-brands fa-bootstrap', color: '#563d7d', text: 'Bootstrap' },
     { icon: 'lni lni-tailwindcss', color: '#0ea5e9', text: 'Tailwind' },
     { icon: 'fa-brands fa-git-alt', color: '#f05033', text: 'Git' },
     { icon: 'lni lni-php', color: '#617cbe', text: 'PHP' },
-    { icon: 'lni lni-laravel', color: '#f72c1f', text: 'Laravel' },
-    { icon: 'fa-brands fa-react', color: '#53c1de', text: 'React' },
-    { icon: 'fa-brands fa-wordpress', color: '#28799e', text: 'WordPress' },
-    { icon: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg', isImage: true, text: 'Figma' }
+    { icon: 'lni lni-vuejs', color: '#3FB27F', text: 'Vue JS' },
 ];
 data.forEach(function (item) {
     var li = document.createElement('li');
