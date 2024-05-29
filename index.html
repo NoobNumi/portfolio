@@ -97,24 +97,6 @@
     </div>
 
 
-    <!-- Password Generator Modal -->
-    <div class="modal fade" id="passwordGenerator" tabindex="-1" aria-labelledby="passwordGeneratorLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_password_generator_demo.mp4"
-                        style="overflow:hidden;height:100%;width:100%" height="100%" width="100%">
-                    </iframe>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <!-- Clientele Survey Modal -->
     <div class="modal fade" id="clientelle" tabindex="-1" aria-labelledby="clientelleLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -333,82 +315,100 @@
                 </div>
             </section>
 
-
             <section class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3" id="projects"
                 data-aos="fade-up">
                 <h4 class="text-primary fw-bold mt-5">Projects</h4>
+                <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">Developed</li>
+                    <li data-filter=".filter-card">Designed</li>
+                </ul>
                 <div class="container swiper my-5">
                     <div class="slide-container">
                         <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide" data-aos="fade-right">
+                            <div class="card swiper-slide developed" data-aos="fade-right">
                                 <div class="image-box">
-                                    <img src="./img/project_img/sample showcase.png" class="img-fluid" />
+                                    <img src="./img/project_img/1.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">Clientele Satisfaction Survey System</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#clientelle">View</a>
+                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">Clientele Satisfaction
+                                                Survey
+                                                System</h1>
+                                                <p class="text-secondary">Web App</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#clientelle"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide" data-aos="fade-right">
+                            <div class="card swiper-slide developed" data-aos="fade-right">
                                 <div class="image-box">
-                                    <img src="./img/project_img/sample showcase_2.png" class="img-fluid" />
+                                    <img src="./img/project_img/5.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">E-Commerce Apparel Selling System</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#ecommerceWeb">View</a>
+                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">E-Commerce Apparel Selling System
+                                            </h3>
+                                            <p class="text-secondary">Web App</p>
+                                        </div>
+
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#ecommerceWeb"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide" data-aos="fade-right">
+                            <div class="card swiper-slide developed" data-aos="fade-right">
                                 <div class="image-box">
-                                    <img src="./img/project_img/sample showcase_3.png" class="img-fluid" />
+                                    <img src="./img/project_img/4.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">Trinitas Information Management System</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#trinitas">View</a>
+                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">Trinitas Information Management
+                                                System</h3>
+                                            <p class="text-secondary">Web App</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#trinitas"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide" data-aos="fade-right">
+                            <div class="card swiper-slide developed" data-aos="fade-right">
                                 <div class="image-box">
-                                    <img src="./img/project_img/sample showcase_4.png" class="img-fluid" />
+                                    <img src="./img/project_img/3.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">Simple Password Generator with Settings</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#passwordGenerator">View</a>
+                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">Threadlore E-commerce Website</h3>
+                                            <p class="text-secondary">Web App</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#chatDemo"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide" data-aos="fade-right">
+                            <div class="card swiper-slide developed" data-aos="fade-right">
                                 <div class="image-box">
-                                    <img src="./img/project_img/sample showcase_5.png" class="img-fluid" />
+                                    <img src="./img/project_img/2.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">Chat App Design using Websocket (Socket.io)</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#chatDemo">View</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/sample showcase_6.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-column">
-                                        <h3 class="name mb-2">Pure CSS and Javascript MarketPlace Landing Page</h3>
-                                        <a href="#" class="btn btn-primary mb-4" data-bs-toggle="modal"
-                                            data-bs-target="#marketPlaceApp">View</a>
+                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">Pure CSS and Javascript
+                                                MarketPlace Landing Page</h3>
+                                            <p class="text-secondary">Web App</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#marketPlaceApp"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -419,48 +419,50 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <section id="contact" class="contact mb-5">
-            <div class="container">
-                <div class="section-title">
-                    <h4 class="text-primary fw-bold mt-5">Contact</h4>
-                </div>
-                <div class="row d-flex w-100 justify-content-between">
-                    <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <img src="./img/portfolio_graphics_numinum.png" alt="" class="img-fluid">
+
+            <section id="contact" class="contact mb-5">
+                <div class="container">
+                    <div class="section-title">
+                        <h4 class="text-primary fw-bold mt-5">Contact</h4>
                     </div>
-                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center aos-init aos-animate"
-                        data-aos="fade-up" data-aos-delay="200">
-                        <div class="php-email-form form rounded-3">
-                            <div class="row my-3">
-                                <div class="form-group col-md-6">
-                                    <label for="name" class="mb-2">Name</label>
-                                    <input type="text" name="name" class="form-control outline-none" id="fullname"
-                                        required="" placeholder="John Doe">
+                    <div class="row d-flex w-100 justify-content-between">
+                        <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
+                            data-aos-delay="100">
+                            <img src="./img/portfolio_graphics_numinum.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center aos-init aos-animate"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="php-email-form form rounded-3">
+                                <div class="row my-3">
+                                    <div class="form-group col-md-6">
+                                        <label for="name" class="mb-2">Name</label>
+                                        <input type="text" name="name" class="form-control outline-none" id="fullname"
+                                            required="" placeholder="John Doe">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="name" class="mb-2">Email</label>
+                                        <input type="email" class="form-control outline-none" name="email" id="email_id"
+                                            required="" placeholder="johndoe@gmail.com">
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-6">
-                                    <label for="name" class="mb-2">Email</label>
-                                    <input type="email" class="form-control outline-none" name="email" id="email_id"
-                                        required="" placeholder="johndoe@gmail.com">
+                                <div class="form-group my-3">
+                                    <label for="name" class="mb-2">Message</label>
+                                    <textarea class="form-control outline-none" name="message" rows="10" id="message"
+                                        required="" placeholder="Type your message..."></textarea>
                                 </div>
-                            </div>
-                            <div class="form-group my-3">
-                                <label for="name" class="mb-2">Message</label>
-                                <textarea class="form-control outline-none" name="message" rows="10" id="message"
-                                    required="" placeholder="Type your message..."></textarea>
-                            </div>
-                            <div class="text-center mt-3 my-3">
-                                <button class="btn btn-primary rounded-pill px-3 py-2" onclick="sendMail()">Send
-                                    Message<i class="ms-2 fa-solid fa-paper-plane"></i></button>
+                                <div class="text-center mt-3 my-3">
+                                    <button class="btn btn-primary rounded-pill px-3 py-2" onclick="sendMail()">Send
+                                        Message<i class="ms-2 fa-solid fa-paper-plane"></i></button>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                 </div>
+            </section>
+        </div>
 
-            </div>
-        </section>
 
 
         <section class="" data-aos="fade-up">
@@ -541,7 +543,6 @@
     <script src="./assets/swiper.js"></script>
     <script src="./assets/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="./assets/send_mail.js"></script>
-
 </body>
 
 </html>
