@@ -196,6 +196,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.dots {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+}
+
+.dots:before {
+    z-index: -1;
+    right: 0;
+    -webkit-transform: translateX(60%);
+    -ms-transform: translateX(60%);
+    transform: translateX(60%);
+    position: absolute;
+    content: "";
+    width: 304px;
+    height: 264px;
+    background: url("../img/dots.png") right top;
+}
+
+
 
 
 @keyframes slide-up {
