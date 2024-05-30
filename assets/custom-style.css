@@ -265,6 +265,29 @@ body {
     color: #fff;
 }
 
+.animate__delay-2s {
+    animation-delay: 0.2s !important;
+}
+
+.animate__delay-3s {
+    animation-delay: 0.3s !important;
+}
+
+.animate__delay-4s {
+    animation-delay: 0.4s !important;
+}
+
+.animate__delay-5s {
+    animation-delay: 0.5s !important;
+}
+
+.animate__delay-6s {
+    animation-delay: 0.6s !important;
+}
+
+.animate__delay-7s {
+    animation-delay: 0.7s !important;
+}
 
 
 @media screen and (max-width: 1490px) {
