@@ -2,7 +2,7 @@ var swiper = new Swiper(".slide-container", {
     slidesPerView: 4,
     spaceBetween: 20,
     sliderPerGroup: 4,
-    loop: true,
+    loop: false,
     centerSlide: "true",
     fade: "true",
     grabCursor: "true",

@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/custom-style.css">
     <link rel="stylesheet" href="./assets/borderless.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript" src="./assets/email.js"></script>
@@ -79,16 +80,16 @@
         </div>
     </div>
 
-    <!-- Chat Demo Modal -->
-    <div class="modal fade" id="chatDemo" tabindex="-1" aria-labelledby="chatDemoLabel" aria-hidden="true">
+    <!-- threadLore -->
+    <div class="modal fade" id="threadLore" tabindex="-1" aria-labelledby="threadLoreLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content h-100">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_chat_demo.mp4" style="overflow:hidden;height:100%;width:100%"
-                        height="100%" width="100%">
+                    <iframe src="./img/demo_folder/sample_threadlore_demo.mp4"
+                        style="overflow:hidden;height:100%;width:100%" height="100%" width="100%">
                     </iframe>
                 </div>
 
@@ -113,6 +114,104 @@
             </div>
         </div>
     </div>
+
+    <!-- E-Voting Graphics -->
+    <div class="modal fade" id="evoting" tabindex="-1" aria-labelledby="evotingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_1.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CSM Graphics -->
+    <div class="modal fade" id="csm" tabindex="-1" aria-labelledby="csmLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_2.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CSM Register Graphics -->
+    <div class="modal fade" id="csm_register" tabindex="-1" aria-labelledby="csm_registerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_3.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CSM Register Graphics -->
+    <div class="modal fade" id="pre_register" tabindex="-1" aria-labelledby="pre_registerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_4.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SRS Org Graphics -->
+    <div class="modal fade" id="srs" tabindex="-1" aria-labelledby="srsLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_5.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SRS Org Graphics -->
+    <div class="modal fade" id="srsoffice" tabindex="-1" aria-labelledby="srsofficeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content h-100">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body view-demo">
+                    <img src="./img/project_img/graphic_6.png" class="img-fluid h-100 w-100 object-fit-contain">
+                    </img>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <main>
         <div class="offcanvas offcanvas-start vh-100 d-md-block px-0 my-0" tabindex="-1" id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel">
@@ -319,19 +418,20 @@
                 data-aos="fade-up">
                 <h4 class="text-primary fw-bold mt-5">Projects</h4>
                 <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Developed</li>
-                    <li data-filter=".filter-card">Designed</li>
+                    <li class="tab filter-active" onclick="filterSelection('all')">All</li>
+                    <li class="tab" onclick="filterSelection('developed')">Developed</li>
+                    <li class="tab" onclick="filterSelection('designed')">Designed</li>
                 </ul>
                 <div class="container swiper my-5">
                     <div class="slide-container">
                         <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide developed" data-aos="fade-right">
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
                                 <div class="image-box">
                                     <img src="./img/project_img/1.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
                                         <div>
                                             <h3 class="name fw-semibold text-primary">Clientele Satisfaction
                                                 Survey
@@ -344,12 +444,30 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide developed" data-aos="fade-right">
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_2.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">CSM Main Page Graphics Art</h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#csm"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
                                 <div class="image-box">
                                     <img src="./img/project_img/5.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
                                         <div>
                                             <h3 class="name fw-semibold text-primary">E-Commerce Apparel Selling System
                                             </h3>
@@ -362,12 +480,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide developed" data-aos="fade-right">
+                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
                                 <div class="image-box">
                                     <img src="./img/project_img/4.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
                                         <div>
                                             <h3 class="name fw-semibold text-primary">Trinitas Information Management
                                                 System</h3>
@@ -379,28 +498,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide developed" data-aos="fade-right">
+                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
                                 <div class="image-box">
                                     <img src="./img/project_img/3.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
                                         <div>
                                             <h3 class="name fw-semibold text-primary">Threadlore E-commerce Website</h3>
                                             <p class="text-secondary">Web App</p>
                                         </div>
                                         <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#chatDemo"><i
+                                            data-bs-toggle="modal" data-bs-target="#threadLore"><i
                                                 class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide developed" data-aos="fade-right">
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_4.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">Pre-Registration Page Graphics Art
+                                            </h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#pre_register"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
                                 <div class="image-box">
                                     <img src="./img/project_img/2.png" class="img-fluid" />
                                 </div>
                                 <div href="#" class="profile-details">
-                                    <div class="name-job d-flex align-items-start justify-content-start flex-col">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
                                         <div>
                                             <h3 class="name fw-semibold text-primary">Pure CSS and Javascript
                                                 MarketPlace Landing Page</h3>
@@ -408,6 +547,79 @@
                                         </div>
                                         <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
                                             data-bs-toggle="modal" data-bs-target="#marketPlaceApp"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_1.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">E-Voting Mobile Graphic Art</h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#evoting"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_3.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">CSM Register Page Graphics Art
+                                            </h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#csm_register"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_5.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">SRS Organization Page
+                                                Graphics Art
+                                            </h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#srs"><i
+                                                class="fa-solid fa-arrow-trend-up"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
+                                <div class="image-box">
+                                    <img src="./img/project_img/graphic_6.png" class="img-fluid" />
+                                </div>
+                                <div href="#" class="profile-details">
+                                    <div
+                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
+                                        <div>
+                                            <h3 class="name fw-semibold text-primary">SRS Office Page
+                                                Graphics Art
+                                            </h3>
+                                            <p class="text-secondary">Graphics</p>
+                                        </div>
+                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
+                                            data-bs-toggle="modal" data-bs-target="#srsoffice"><i
                                                 class="fa-solid fa-arrow-trend-up"></i></a>
                                     </div>
                                 </div>
@@ -543,6 +755,7 @@
     <script src="./assets/swiper.js"></script>
     <script src="./assets/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="./assets/send_mail.js"></script>
+    <script src="./assets/display_project.js"></script>
 </body>
 
 </html>
