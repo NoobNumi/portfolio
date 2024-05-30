@@ -4,14 +4,16 @@ function filterSelection(c) {
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
         if (c === "" || x[i].className.indexOf(c) > -1) {
-            removeClass(x[i], "d-none");
-            addClass(x[i], "animate__animated animate__fadeInRight");
+            $(x[i]).show();
+            addClass(x[i], "animate__animated animate__fadeInUp");
         } else {
-            addClass(x[i], "d-none");
-            removeClass(x[i], "animate__animated animate__fadeInRight");
+            $(x[i]).hide();
+            removeClass(x[i], "animate__animated animate__fadeInUp");
         }
     }
+    swiper.update();
 }
+
 
 function addClass(element, name) {
     var i, arr1, arr2;
