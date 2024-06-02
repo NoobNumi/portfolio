@@ -752,48 +752,35 @@
     </main>
     <script src="./assets/watermark.min.js"></script>
     <script>
-        // Evoting graphics 
-        watermark(['./img/project_img/graphic_1.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('evoting_graphs').appendChild(img);
-            });
-        // CSM graphics 
-        watermark(['./img/project_img/graphic_2.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('csm_graphs').appendChild(img);
-            });
-        // CSM register graphics 
-        watermark(['./img/project_img/graphic_3.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('csm_register_graphs').appendChild(img);
-            });
-        // pre register graphics 
-        watermark(['./img/project_img/graphic_4.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('pre_register_graphics').appendChild(img);
-            });
-        // SRS org graphics 
-        watermark(['./img/project_img/graphic_5.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('srs_org_graphics').appendChild(img);
-            });
-        // SRS office graphics 
-        watermark(['./img/project_img/graphic_6.png', './img/logo_sample.png'])
-            .image(watermark.image.center(0.1))
-            .then(function (img) {
-                img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
-                document.getElementById('srs_office_graphics').appendChild(img);
-            });
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
+
+        document.addEventListener('keydown', function (e) {
+            if (e.which === 123) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+
+        const graphics = [
+            { id: 'evoting_graphs', img: './img/project_img/graphic_1.png' },
+            { id: 'csm_graphs', img: './img/project_img/graphic_2.png' },
+            { id: 'csm_register_graphs', img: './img/project_img/graphic_3.png' },
+            { id: 'pre_register_graphics', img: './img/project_img/graphic_4.png' },
+            { id: 'srs_org_graphics', img: './img/project_img/graphic_5.png' },
+            { id: 'srs_office_graphics', img: './img/project_img/graphic_6.png' }
+        ];
+
+        graphics.forEach(graphic => {
+            watermark([graphic.img, './img/logo_sample.png'])
+                .image(watermark.image.center(0.1))
+                .then(img => {
+                    img.classList.add('img-fluid', 'h-100', 'w-100', 'object-fit-contain');
+                    document.getElementById(graphic.id).appendChild(img);
+                });
+        });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
