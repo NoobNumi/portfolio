@@ -124,7 +124,13 @@ body {
 }
 
 .view-demo {
-    height: 700px;
+    height: 100%;
+}
+
+iframe,
+.modal-body img {
+    height: 400px;
+    object-fit: cover;
 }
 
 .graphic-circle_1 {
@@ -137,6 +143,13 @@ body {
     height: 600px;
     top: 300px;
     left: -300px;
+}
+
+.open-link-btn {
+    display: flex;
+    width: 100%;
+    max-width: 180px;
+    align-items: center;
 }
 
 
@@ -201,6 +214,7 @@ body {
     position: absolute;
     width: 100%;
     height: 200%;
+    right: 0 !important;
     overflow: visible;
 }
 
@@ -289,6 +303,12 @@ body {
     animation-delay: 0.7s !important;
 }
 
+.prog-lang {
+    background-color: #ffff;
+    border: solid 1px #26619c;
+    border-radius: 40px;
+}
+
 
 @media screen and (max-width: 1490px) {
     .dots:before {
@@ -312,7 +332,8 @@ body {
     }
 
 
-    .view-demo {
+    iframe,
+    .modal-body img {
         height: 100%;
     }
 
