@@ -1,13 +1,13 @@
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-}, false);
+// document.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+// }, false);
 
-document.addEventListener('keydown', function (e) {
-    if (e.which === 123) {
-        e.preventDefault();
-        return false;
-    }
-});
+// document.addEventListener('keydown', function (e) {
+//     if (e.which === 123) {
+//         e.preventDefault();
+//         return false;
+//     }
+// });
 
 
 const graphics = [
