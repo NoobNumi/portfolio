@@ -5,9 +5,10 @@ var data = [
     { icon: 'fa-brands fa-js', color: '#f7df1e', text: 'Javascript' },
     { icon: 'lni lni-mysql', color: '#00546b', text: 'MySQL' },
     { icon: 'fa-brands fa-bootstrap', color: '#563d7d', text: 'Bootstrap' },
-    { icon: 'lni lni-tailwindcss', color: '#0ea5e9', text: 'Tailwind' },
+    { icon: 'lni lni-tailwindcss', color: '#0ea5e9', text: 'Tailwind CSS' },
     { icon: 'lni lni-php', color: '#617cbe', text: 'PHP' },
-    { icon: 'lni lni-vuejs', color: '#3FB27F', text: 'Vue JS' },
+    { icon: 'lni lni-laravel', color: '#ff2d20', text: 'Laravel' },
+    { icon: 'lni lni-react', color: '#01D7FC', text: 'React JS' },
 ];
 data.forEach(function (item) {
     var li = document.createElement('li');
