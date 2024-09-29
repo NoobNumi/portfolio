@@ -1,13 +1,13 @@
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-}, false);
+// document.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+// }, false);
 
-document.addEventListener('keydown', function (e) {
-    if (e.which === 123) {
-        e.preventDefault();
-        return false;
-    }
-});
+// document.addEventListener('keydown', function (e) {
+//     if (e.which === 123) {
+//         e.preventDefault();
+//         return false;
+//     }
+// });
 
 
 const graphics = [
@@ -26,4 +26,16 @@ graphics.forEach(graphic => {
             img.classList.add('img-fluid', 'w-100', 'object-fit-contain');
             document.getElementById(graphic.id).appendChild(img);
         });
+});
+
+const scrollAction = document.querySelector('.main__action');
+
+window.addEventListener('scroll', function () {
+    let scrollPos = window.scrollY;
+
+    if (scrollPos < 600) {
+        scrollAction.style.opacity = 1 - scrollPos / 600;
+    } else {
+        scrollAction.style.opacity = 0;
+    }
 });

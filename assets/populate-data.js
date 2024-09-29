@@ -6,6 +6,7 @@ var data = [
     { icon: 'lni lni-mysql', color: '#00546b', text: 'MySQL' },
     { icon: 'fa-brands fa-bootstrap', color: '#563d7d', text: 'Bootstrap' },
     { icon: 'lni lni-tailwindcss', color: '#0ea5e9', text: 'Tailwind CSS' },
+    { icon: 'lni lni-figma', color: '#F24E1E', text: 'Figma' },
     { icon: 'lni lni-php', color: '#617cbe', text: 'PHP' },
     { icon: 'lni lni-laravel', color: '#ff2d20', text: 'Laravel' },
     { icon: 'lni lni-react', color: '#01D7FC', text: 'React JS' },
