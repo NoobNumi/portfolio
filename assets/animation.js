@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const words = ["FRONT-END DEVELOPER", "GRAPHICS DESIGNER"];
+const words = ["FRONT-END DEVELOPER", "UI/UX Designer" ,"GRAPHICS DESIGNER"];
 let i = 0;
 let timer;
 let delayAfterTyping = 1000; // 1-second delay after typing
