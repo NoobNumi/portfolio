@@ -23,7 +23,7 @@ body {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #26619c;
+  background: #5271ff;
 }
 
 .text-semi-primary {
@@ -182,10 +182,10 @@ iframe,
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #5271ff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #5271ff;
 }
 
 .services .title {
@@ -281,7 +281,7 @@ iframe,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.filter-active {
-  background: #47b2e4;
+  background: #b0ade4;
   color: #fff;
 }
 
@@ -311,7 +311,7 @@ iframe,
 
 .prog-lang {
   background-color: #ffff;
-  border: solid 1px #26619c;
+  border: solid 1px #5271ff;
   border-radius: 40px;
 }
 
