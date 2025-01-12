@@ -20,7 +20,7 @@ const graphics = [
 ];
 
 graphics.forEach((graphic) => {
-  watermark([graphic.img, "./img/logo_sample.png"])
+  watermark([graphic.img, "./img/new_logo.png"])
     .image(watermark.image.center(0.1))
     .then((img) => {
       img.classList.add("img-fluid", "w-100", "object-fit-contain");

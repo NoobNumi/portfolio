@@ -91,7 +91,7 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: #000;
+  background-color: #5271ff;
 }
 
 .nav-link {
@@ -204,12 +204,16 @@ iframe,
 .form {
   padding: 30px;
   background: #fff;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08);
 }
 
 .form input {
   box-shadow: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-size: 14px;
 }
 
 .btn {
@@ -281,7 +285,7 @@ iframe,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.filter-active {
-  background: #b0ade4;
+  background: #5271ff;
   color: #fff;
 }
 
@@ -568,4 +572,75 @@ a {
   .dots:before {
     width: 100px;
   }
+}
+
+/* Resume Box
+---------------------*/
+.resume-box {
+  background: #ffffff;
+  box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08);
+  border-radius: 10px;
+}
+.resume-box ul {
+  margin: 0;
+  padding: 30px 20px;
+  list-style: none;
+}
+.resume-box li {
+  position: relative;
+  padding: 0 20px 0 60px;
+  margin: 0 0 30px;
+}
+.resume-box li:last-child {
+  margin-bottom: 0;
+}
+.resume-box li:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-left: 1px dashed #5271ff;
+  bottom: 0;
+}
+.resume-box .icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #5271ff;
+  line-height: 40px;
+  background: #ffffff;
+  text-align: center;
+  z-index: 1;
+  border: 1px dashed;
+  border-radius: 50%;
+}
+.resume-box .time {
+  background: #5271ff;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.resume-box h5 {
+  font-weight: 700;
+  color: #5271ff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.resume-box p {
+  margin: 0;
+}
+
+.resume-box li:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border-left: 1px dashed #5271ff;
+  bottom: 0;
 }
