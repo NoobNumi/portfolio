@@ -7,6 +7,7 @@ const card = document.querySelectorAll(".card");
 const footer = document.querySelector("footer");
 const offCanvas = document.querySelector(".offcanvas");
 const resume = document.querySelector(".resume-box");
+const navbar = document.getElementById("navbar");
 
 // Function to apply the dark mode styles
 function applyDarkMode() {
@@ -31,6 +32,12 @@ function applyDarkMode() {
   footer.classList.remove("bg-body-tertiary");
   offCanvas.classList.add("bg-dark");
   resume.classList.add("bg-dark");
+  navbar.classList.add("bg-dark");
+  navbar.classList.remove("bg-white");
+
+  document.querySelector('.form input[type="text"]').style.color = "#FFFFFF";
+  document.querySelector('.form input[type="email"]').style.color = "#FFFFFF";
+  document.querySelector(".form textarea").style.color = "#FFFFFF";
 }
 
 // Function to apply the light mode styles
@@ -56,6 +63,12 @@ function applyLightMode() {
   footer.classList.add("bg-body-tertiary");
   offCanvas.classList.remove("bg-dark");
   resume.classList.remove("bg-dark");
+  navbar.classList.remove("bg-dark");
+  navbar.classList.add("bg-white");
+
+  document.querySelector('.form input[type="text"]').style.color = "#333333";
+  document.querySelector('.form input[type="email"]').style.color = "#333333";
+  document.querySelector(".form textarea").style.color = "#333333";
 }
 
 // Get the stored theme preference from local storage
