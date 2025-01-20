@@ -1,6 +1,5 @@
 const checkboxes = Array.from(document.querySelectorAll(".theme__toggle"));
 const darkText = document.querySelectorAll(".text-dark");
-const dots = document.querySelector(".dots");
 const formControls = document.querySelectorAll("input, textarea");
 const contactForm = document.querySelector(".php-email-form");
 const card = document.querySelectorAll(".card");
@@ -26,7 +25,6 @@ function applyDarkMode() {
   document
     .querySelector(".theme__icon")
     .classList.add("theme__icon--transition");
-  dots.style.opacity = "0.1";
   contactForm.classList.add("bg-dark");
   footer.classList.add("bg-dark");
   footer.classList.remove("bg-body-tertiary");
@@ -57,7 +55,6 @@ function applyLightMode() {
   document
     .querySelector(".theme__icon")
     .classList.remove("theme__icon--transition");
-  dots.style.opacity = "1";
   contactForm.classList.remove("bg-dark");
   footer.classList.remove("bg-dark");
   footer.classList.add("bg-body-tertiary");
