@@ -1,1063 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/borderless.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./assets/custom-style.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/borderless.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./assets/custom-style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript" src="./assets/email.js"></script>
     <title>Niña Gillian Villamin | Portfolio</title>
-</head>
+  </head>
 
-<body class="overflow-x-hidden bg-white">
+  <body class="overflow-x-hidden bg-white">
     <div class="position-relative">
-        <img src="./img/small_graphics_circle.png" data-aos="fade-right"
-            class="graphic-circle_2 position-absolute opacity-25">
+      <img
+        src="./img/small_graphics_circle.png"
+        data-aos="fade-right"
+        class="graphic-circle_2 position-absolute opacity-25"
+      />
     </div>
-    <!-- Market Place Modal -->
-    <div class="modal fade" id="marketPlaceApp" tabindex="-1" aria-labelledby="marketPlaceAppLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_marketplace_webpage_demo.mp4"
-                        style="overflow:hidden;width:100%" height="100%" width="100%" sandbox>
-                    </iframe>
-                    <div class="my-3" style="line-height: 2rem;">
-                        <h3 class="fw-bold text-primary">MarketPlace Landing Page</h3>
-                        <p class="text-secondary">This is a simple marketplace landing page that I made to practice in
-                            designing and coding a webpage.</p>
-                        <!-- <a href="https://github.com/NoobNumi/dictionary-extension" target="__blank"
-                            class="btn btn-primary rounded open-link-btn">
-                            <span>View on github </span>
-                            <i class="lni lni-github-original ms-2 mb-0"></i></a> -->
-                        <div class="d-flex mt-4 gap-2">
-                            <span class="badge p-2 text-primary prog-lang">HTML5
-                            </span>
-                            <span class="badge p-2 text-primary prog-lang">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- chrome extension Modal -->
-    <div class="modal fade" id="chromeExtension" tabindex="-1" aria-labelledby="trinitasLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample-extension-demo.mp4" style="overflow:hidden;width:100%"
-                        height="100%" width="100%" sandbox>
-                    </iframe>
-                    <div class="my-3" style="line-height: 2rem;">
-                        <h3 class="fw-bold text-primary">Dictionary Chrome extension</h3>
-                        <p class="text-secondary">This is a just a simple dictionary chrome extension that I made to
-                            practice in utilizing API. </p>
-                        <a href="https://github.com/NoobNumi/dictionary-extension" target="__blank"
-                            class="btn btn-primary rounded open-link-btn">
-                            <span>View on github </span>
-                            <i class="lni lni-github-original ms-2 mb-0"></i></a>
-                        <div class="d-flex mt-4 gap-2">
-                            <span class="badge p-2 text-primary prog-lang">Javascript</span>
-                            <span class="badge p-2 text-primary prog-lang">TailwindCSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Trinitas Modal -->
-    <div class="modal fade" id="trinitas" tabindex="-1" aria-labelledby="trinitasLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_trinitas_demo.mp4" style="overflow:hidden;width:100%"
-                        height="100%" width="100%" sandbox>
-                    </iframe>
-                    <div class="my-3" style="line-height: 2rem;">
-                        <h3 class="fw-bold text-primary">Trinitas (Capstone Project)</h3>
-                        <p class="text-secondary">
-                            Trinitas is a Web-based information management system that we have developed to complete our
-                            final year thesis requirement. We developed the system in which it manages the business
-                            process of the Trinitas Home for contemplation organization. It was
-                            developed using PHP and MySQL for the back-end and HTML, CSS, Bootstrap and Javascript for
-                            the front-end.
-                        </p>
-                        <a href="https://github.com/NoobNumi/Capstone-Project" target="__blank"
-                            class="btn btn-primary rounded open-link-btn">
-                            <span>View on github </span>
-                            <i class="lni lni-github-original ms-2 mb-0"></i></a>
-                        <div class="d-flex mt-4 gap-2">
-                            <span class="badge p-2 text-primary prog-lang">Bootstrap</span>
-                            <span class="badge p-2 text-primary prog-lang">PHP</span>
-                            <span class="badge p-2 text-primary prog-lang">Javascript</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- threadLore -->
-    <div class="modal fade" id="threadLore" tabindex="-1" aria-labelledby="threadLoreLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_threadlore_demo.mp4" style="overflow:hidden;width:100%"
-                        height="100%" width="100%" sandbox>
-                    </iframe>
-                    <div class="my-3" style="line-height: 2rem;">
-                        <h3 class="fw-bold text-primary">Threadlore E-commerce website (ongoing)</h3>
-                        <p class="text-secondary">
-                            A simple e-commerce website that I am currently developing. It is a project that I am doing
-                            to practice my skills in web development. It is developed using HTML, CSS, flowbite library
-                            and tailwindCSS for the front-end and PHP for the backend.
-                        </p>
-                        <a href="#" target="__blank" class="btn btn-primary rounded open-link-btn">
-                            <span>View on github </span>
-                            <i class="lni lni-github-original ms-2 mb-0"></i></a>
-                        <div class="d-flex mt-4 gap-2">
-                            <span class="badge p-2 text-primary prog-lang">TailwindCSS</span>
-                            <span class="badge p-2 text-primary prog-lang">PHP</span>
-                            <span class="badge p-2 text-primary prog-lang">Flowbite</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Clientele Survey Modal -->
-    <div class="modal fade" id="clientelle" tabindex="-1" aria-labelledby="clientelleLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo">
-                    <iframe src="./img/demo_folder/sample_survey.mp4" style="overflow:hidden;width:100%" height="100%"
-                        width="100%" sandbox>
-                    </iframe>
-                    <div class="my-3" style="line-height: 2rem;">
-                        <h3 class="fw-bold text-primary">Clientele Satisfaction Measurement</h3>
-                        <p class="text-secondary">
-                            Clientele Satisfaction Measurement System is a web-based survey system developed as an
-                            internship project. It is a system that is used to measure the satisfaction of the clients
-                            of the Bicol University. My role in this project was mostly designing
-                            the graphics and coding minimal tweaks in the front-end.
-                        </p>
-                        <a href="https://survey.bicol-u.edu.ph/" target="__blank"
-                            class="btn btn-primary rounded open-link-btn" style="max-width: 130px;">
-                            <span>Visit web</span>
-                            <i class="lni lni-arrow-top-right ms-2 mb-0"></i></a>
-                        <div class="d-flex mt-4 gap-2">
-                            <span class="badge p-2 text-primary prog-lang">PHP</span>
-                            <span class="badge p-2 text-primary prog-lang">Laravel</span>
-                            <span class="badge p-2 text-primary prog-lang">Javascript</span>
-                            <span class="badge p-2 text-primary prog-lang">Sneat Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- StayNest UI/UX -->
-    <div class="modal fade" id="stayNest" tabindex="-1" aria-labelledby="stayNestLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="stayNestDesign">
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">Stay Nest</h3>
-                    <p class="text-secondary">
-                        StayNest is a web-based hotel booking system that I designed as a personal project. It is a simple and clean design that I made to practice my skills in UI/UX design. It is designed using figma and developed using React JS and Tailwind CSS.
-                    </p>
-                    <div class="d-flex flex-column flex-md-row mt-4 gap-2">
-                        <a href="https://www.figma.com/design/iONViAPq3jGCZDykc6AWnz/StayNest?node-id=0-1&t=ISJV2Yi3mzDZomzI-1" target="__blank"
-                            class="btn btn-primary rounded open-link-btn me-3" style="max-width: 200px;">
-                            <p class="text-nowrap mb-0 px-7 py-1">View Figma Design</p>
-                            <i class="lni lni-arrow-top-right ms-2 mb-0"></i>
-                        </a>
-                        <a href="https://staynest-pearl.vercel.app/" target="__blank"
-                            class="btn btn-primary rounded open-link-btn" style="max-width: 120px;">
-                            <p class="text-nowrap mb-0 px-7 py-1">Visit site</p>
-                            <i class="lni lni-arrow-top-right ms-2 mb-0"></i>
-                        </a>
-                    </div>
-                    <div class="mt-4 row g-2">
-                        <div class="col-auto">
-                            <span class="badge p-2 text-primary prog-lang">Figma</span>
-                        </div>
-                        <div class="col-auto">
-                            <span class="badge p-2 text-primary prog-lang">Tailwind CSS</span>
-                        </div>
-                        <div class="col-auto">
-                            <span class="badge p-2 text-primary prog-lang">React JS</span>
-                        </div>
-                        <div class="col-auto">
-                            <span class="badge p-2 text-primary prog-lang">Vite</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- E-Voting Graphics -->
-    <div class="modal fade" id="evoting" tabindex="-1" aria-labelledby="evotingLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="evoting_graphs">
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">E-Voting Graphics Art</h3>
-                    <p class="text-secondary">
-                        Its is a graphics art that I designed to be used in the e-voting web system in our university.
-                    </p>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CSM Graphics -->
-    <div class="modal fade" id="csm" tabindex="-1" aria-labelledby="csmLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="csm_graphs">
-                    <!-- <img src="./img/project_img/graphic_2.png" class="img-fluid h-100 w-100 object-fit-contain"> -->
-                    </img>
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">Clientele Satisfaction Measurement Graphics</h3>
-                    <p class="text-secondary">
-                        Its the main page graphics art that I designed to be used in the Clientele Satisfaction Survey
-                        System.
-                    </p>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CSM Register Graphics -->
-    <div class="modal fade" id="csm_register" tabindex="-1" aria-labelledby="csm_registerLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="csm_register_graphs">
-                    <!-- <img src="./img/project_img/graphic_3.png" class="img-fluid h-100 w-100 object-fit-contain">
-                    </img> -->
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">CSM Registration Graphics</h3>
-                    <p class="text-secondary">
-                        Its the registration page graphics art that I designed to be used in the Clientele Satisfaction
-                        Survey System.
-                    </p>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- pre Register Graphics -->
-    <div class="modal fade" id="pre_register" tabindex="-1" aria-labelledby="pre_registerLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="pre_register_graphics">
-                    <!-- <img src="./img/project_img/graphic_4.png" class="img-fluid h-100 w-100 object-fit-contain">
-                    </img> -->
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">Pre-registration Graphics</h3>
-                    <p class="text-secondary">
-                        Designed this graphics art to be used in the student pre-registration page of the Bicol
-                        University.
-                    </p>
-                    <a href="https://register.busis.bicol-u.edu.ph/" target="__blank"
-                        class="btn btn-primary rounded open-link-btn" style="max-width: 130px;">
-                        <span>Visit web</span>
-                        <i class="lni lni-arrow-top-right ms-2 mb-0"></i></a>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SRS Org Graphics -->
-    <div class="modal fade" id="srs" tabindex="-1" aria-labelledby="srsLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="srs_org_graphics">
-                    <!-- <img src="./img/project_img/graphic_5.png" class="img-fluid h-100 w-100 object-fit-contain">
-                    </img> -->
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">SRS Org Graphics</h3>
-                    <p class="text-secondary">
-                        Used for the service request system used by the bicol university information communications
-                        technology office to manage the service requests of the students and faculty.
-                    </p>
-                    <a href="https://icto.bicol-u.edu.ph/" target="__blank"
-                        class="btn btn-primary rounded open-link-btn" style="max-width: 130px;">
-                        <span>Visit web</span>
-                        <i class="lni lni-arrow-top-right ms-2 mb-0"></i></a>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SRS Office Graphics -->
-    <div class="modal fade" id="srsoffice" tabindex="-1" aria-labelledby="srsofficeLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content h-100">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body view-demo" id="srs_office_graphics">
-                    <!-- <img src="./img/project_img/graphic_6.png" class="img-fluid h-100 w-100 object-fit-contain">
-                    </img> -->
-                </div>
-                <div class="my-3 mx-5" style="line-height: 2rem;">
-                    <h3 class="fw-bold text-primary">SRS Org Graphics</h3>
-                    <p class="text-secondary">
-                        Used for the service request system used by the bicol university information communications
-                        technology office to manage the service requests of the students and faculty.
-                    </p>
-                    <a href="https://icto.bicol-u.edu.ph/" target="__blank"
-                        class="btn btn-primary rounded open-link-btn" style="max-width: 130px;">
-                        <span>Visit web</span>
-                        <i class="lni lni-arrow-top-right ms-2 mb-0"></i></a>
-                    <div class="d-flex mt-4 gap-2">
-                        <span class="badge p-2 text-primary prog-lang">ibisPaint</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <main>
-        <div class="offcanvas offcanvas-start vh-100 d-lg-block px-0 my-0" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/new_logo.png" alt="Logo" height="40"
-                        class="d-inline-block align-text-top rounded">
+      <div
+        class="offcanvas offcanvas-start vh-100 d-lg-block px-0 my-0"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/new_logo.png"
+              alt="Logo"
+              height="40"
+              class="d-inline-block align-text-top rounded"
+            />
+          </a>
+          <button
+            type="button"
+            class="btn-close pe-auto"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i class="lni lni-close text-white"></i>
+          </button>
+        </div>
+        <ul class="nav d-flex flex-column gap-3 px-0 my-0 w-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">
+              <span class="text-secondary">Skills</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">
+              <span class="text-secondary">Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">
+              <span class="text-secondary">Projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">
+              <span class="text-secondary">Experience</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <label for="theme-1" class="theme">
+              <span class="theme__toggle-wrap">
+                <input
+                  id="theme-1"
+                  class="theme__toggle"
+                  type="checkbox"
+                  role="switch"
+                  name="theme"
+                  value="dark"
+                />
+                <span class="theme__icon">
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                  <span class="theme__icon-part"></span>
+                </span>
+              </span>
+            </label>
+          </li>
+          <li class="nav-item ms-3">
+            <a
+              class="btn btn-primary rounded-md px-3 py-2"
+              href="./resume_villamin.pdf"
+              target="_blank"
+              >Download CV <i class="ms-2 fa-solid fa-arrow-down"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <header
+        data-aos="fade-up"
+        id="navbar"
+        class="position-relative w-100 bg-white top-0 left-0"
+        style="z-index: 1000; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px"
+      >
+        <nav class="navbar w-100">
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <img
+                src="./img/new_logo.png"
+                alt="Logo"
+                height="50"
+                class="d-inline-block align-text-top rounded"
+              />
+            </a>
+            <ul
+              class="nav justify-content-end align-items-center d-none d-lg-flex"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                  <span class="text-secondary">Skills</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">
+                  <span class="text-secondary">Services</span>
                 </a>
-                <button type="button" class="btn-close pe-auto" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                        class="lni lni-close text-white"></i></button>
-            </div>
-            <ul class="nav d-flex flex-column gap-3 px-0 my-0 w-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">
-                        <span class="text-secondary">Skills</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">
-                        <span class="text-secondary">Services</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">
-                        <span class="text-secondary">Projects</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experience">
-                        <span class="text-secondary">Experience</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        <span class="text-secondary">Contact Me</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <label for="theme-1" class="theme">
-                        <span class="theme__toggle-wrap">
-                            <input id="theme-1" class="theme__toggle" type="checkbox" role="switch" name="theme"
-                                value="dark">
-                            <span class="theme__icon">
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                                <span class="theme__icon-part"></span>
-                            </span>
-                        </span>
-                    </label>
-                </li>
-                <li class="nav-item ms-3">
-                    <a class="btn btn-primary rounded-pill px-3 py-2" href="./resume_villamin.pdf"
-                        target="_blank">Download
-                        CV <i class="ms-2 fa-solid fa-arrow-down"></i></a>
-                </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">
+                  <span class="text-secondary">Projects</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">
+                  <span class="text-secondary">Experience</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <label for="theme-2" class="theme">
+                  <span class="theme__toggle-wrap">
+                    <input
+                      id="theme-2"
+                      class="theme__toggle"
+                      type="checkbox"
+                      role="switch"
+                      name="theme"
+                      value="dark"
+                    />
+                    <span class="theme__icon">
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                      <span class="theme__icon-part"></span>
+                    </span>
+                  </span>
+                </label>
+              </li>
+              <li class="nav-item ms-3">
+                <a
+                  class="btn btn-primary rounded-md px-3 py-2"
+                  href="./resume_villamin.pdf"
+                  target="_blank"
+                  >Download CV <i class="ms-2 fa-solid fa-arrow-down"></i
+                ></a>
+              </li>
             </ul>
-        </div>
-<header data-aos="fade-up" id="navbar" class="position-relative w-100 bg-white top-0 left-0" style="z-index: 1000; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;">
-                <nav class="navbar w-100">
-                    <div class="container">
-                        <a class="navbar-brand" href="/">
-                            <img src="./img/new_logo.png" alt="Logo" height="50"
-                                class="d-inline-block align-text-top rounded">
-                        </a>
-                        <ul class="nav justify-content-end align-items-center d-none d-lg-flex">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">
-                                    <span class="text-secondary">Skills</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">
-                                    <span class="text-secondary">Services</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#projects">
-                                    <span class="text-secondary">Projects</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#experience">
-                                    <span class="text-secondary">Experience</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">
-                                    <span class="text-secondary">Contact Me</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <label for="theme-2" class="theme">
-                                    <span class="theme__toggle-wrap">
-                                        <input id="theme-2" class="theme__toggle" type="checkbox" role="switch"
-                                            name="theme" value="dark">
-                                        <span class="theme__icon">
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                            <span class="theme__icon-part"></span>
-                                        </span>
-                                    </span>
-                                </label>
-                            </li>
-                            <li class="nav-item ms-3">
-                                <a class="btn btn-primary rounded-pill px-3 py-2" href="./resume_villamin.pdf"
-                                    target="_blank">Download
-                                    CV <i class="ms-2 fa-solid fa-arrow-down"></i></a>
-                            </li>
-                        </ul>
-                        <a class="d-block d-lg-none" id="OpenMenu" style="cursor: pointer;">
-                            <i class="fa-solid fa-bars fs-1 text-primary"></i>
-                        </a>
-                    </div>
-                </nav>
-            </header>
-        <div class="container my-5">
-            <section class="d-flex flex-column justify-content-start w-100 mb-5" id="home">
-
-                <div class="row my-5 px-3 px-md-3 d-flex align-items-center justify-content-between w-100 my-5">
-                    <div class="col-12 col-md-6" data-aos="fade-right">
-                        <div class="d-flex flex-row align-items-center">
-                            <span class="text-primary fw-medium" id="word"></span>
-                            <p class="header-sub-title blink text-black mb-0 pb-0">|</p>
-                        </div>
-                        <h1 class="fw-bold my-3 text-dark">Hi, this is <span class="text-primary">Nins</span>!</h1>
-                        <span class="text-secondary">
-                            I specialize in web development, creating visually engaging designs and writing clean,
-                            efficient code. As an Associate
-                            Software Engineer, I’m actively seeking freelance web development projects and part-time
-                            software engineering roles.
-                            Scroll down to explore my work and learn more about my expertise.
-                        </span>
-                        <div class="nav d-flex my-5 gap-3 flex-row">
-                            <a class="btn btn-primary rounded-md px-3 py-2 d-flex align-items-center" href="https://www.linkedin.com/in/ni%C3%B1a-gillian-villamin-28632727a/" target="_blankñ">
-                                <span class="me-2">Hire me</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="20" height="20">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
-                                </svg>
-                            </a>
-                            <div class="d-flex flex-row">
-                                <input type="email" id="emailInput" class="form-control rounded-start-2 rounded-end-0 border-0" style="font-size: 14px; width: auto;" value="ninagillianvillamin1128@gmail.com" disabled>
-                                <button id="copyButton" class="btn rounded-start-0 rounded-end-2 px-3 py-2 d-flex align-items-center border-0" style="background-color: #E9ECEF;" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy email">
-                                    <svg id="copyIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="20" height="20">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
-                                    </svg>
-                                </button>
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6" data-aos="fade-left">
-                        <img src="./img/profile_3.png" class="img-fluid">
-                    </div>
+            <a class="d-block d-lg-none" id="OpenMenu" style="cursor: pointer">
+              <i class="fa-solid fa-bars fs-1 text-primary"></i>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <div class="container my-5">
+        <section
+          class="d-flex flex-column justify-content-start w-100 mb-5"
+          id="home"
+        >
+          <div
+            class="row my-5 px-3 px-md-3 d-flex align-items-center justify-content-between w-100 my-5"
+          >
+            <div class="col-12 col-md-6" data-aos="fade-right">
+              <div class="d-flex flex-row align-items-center">
+                <span class="text-primary fw-medium" id="word"></span>
+                <p class="header-sub-title blink text-black mb-0 pb-0">|</p>
+              </div>
+              <h1 class="fw-bold my-3 text-dark">
+                Hi, this is <span class="text-primary">Nins</span>!
+              </h1>
+              <span class="text-secondary">
+                I am a 23 year old web developer and a UI/UX Designer. I am
+                passionate in creating beautiful and functional websites and
+                product designs. I am currently working full time as an
+                Associate Software Engineer and lead designer. I am always open
+                for new opportunities and collaborations. Feel free to contact
+                me!
+              </span>
+              <div class="nav d-flex my-5 gap-3 flex-row">
+                <a
+                  class="btn btn-primary rounded-md px-3 py-2 d-flex align-items-center"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=ninagillianvillamin1128@gmail.com"
+                  target="_blankñ"
+                >
+                  <span class="me-2">Hire me</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class=""
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"
+                    />
+                  </svg>
+                </a>
+                <div class="d-flex flex-row">
+                  <input
+                    type="email"
+                    id="emailInput"
+                    class="form-control rounded-start-2 rounded-end-0 border-0"
+                    style="font-size: 14px; width: auto"
+                    value="ninagillianvillamin1128@gmail.com"
+                    disabled
+                  />
+                  <button
+                    id="copyButton"
+                    class="btn rounded-start-0 rounded-end-2 px-3 py-2 d-flex align-items-center border-0"
+                    style="background-color: #e9ecef"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Copy email"
+                  >
+                    <svg
+                      id="copyIcon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                      width="20"
+                      height="20"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184"
+                      />
+                    </svg>
+                  </button>
                 </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-left">
+              <img src="./img/profile_3.png" class="img-fluid" />
+            </div>
+          </div>
 
-                <div class="main__action text-center animate__animated animate__bounce animate__infinite">
-                    <a class="main__scroll" href="#">
-                        <div class="main__scroll-box">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path
-                                    d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
-                                    fill="#5271ff">
-                                </path>
-                            </svg>
-                        </div>
+          <div
+            class="main__action text-center animate__animated animate__bounce animate__infinite"
+          >
+            <a class="main__scroll" href="#">
+              <div class="main__scroll-box">
+                <svg
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50px"
+                  height="50px"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                    fill="#5271ff"
+                  ></path>
+                </svg>
+              </div>
 
-                        <span class="main__scroll-text text-dark">Scroll</span>
-                    </a>
-                </div>
-
-            </section>
-
-            <section class="d-flex flex-column justify-content-center w-100 mt-5 my-5 px-3 px-md-3" id="skills"
-                data-aos="fade-up">
-                <h4 class="text-primary fw-bold mt-5">Skills</h4>
-                <ul class="d-flex nav align-items-center justify-content-center w-100 gap-5 my-5" id="dynamicList">
-                    <!-- List items will be inserted here by JavaScript -->
-                </ul>
-            </section>
-
-            <section id="services" class="services" id="services">
-                <div class="container">
-                    <div class="section-title">
-                        <h4 class="text-primary fw-bold my-5">Services</h4>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up">
-                            <div class="icon"><i class="fa-solid fa-computer text-white"></i></div>
-                            <h4 class="title text-primary">Develop Dynamic and Static Webpages</h4>
-                            <p class="description text-dark">I specialize in creating both <strong
-                                    class="text-primary">dynamic</strong> and
-                                <strong class="text-primary">static one-page
-                                    websites</strong>,
-                                such as professional <strong class="text-primary">landing pages</strong> that are
-                                optimized for speed,
-                                performance, and user
-                                engagement. Whether you're looking for a static webpage for simplicity or a dynamic one
-                                for flexibility,
-                                I can build responsive and modern designs to meet your needs.
-                            </p>
-                        </div>
-                        <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up"
-                            data-aos-delay="100">
-                            <div class="icon"><i class="fa-solid fa-paint-brush text-white"></i></div>
-                            <h4 class="title text-primary">Corporate UI/UX Design</h4>
-                            <p class="description text-dark">
-                                I specialize in creating <strong class="text-primary">corporate UI/UX designs</strong> that enhance user experiences and align with your brand’s identity.  
-                                <br>
-                                I can design <strong class="text-primary">clean and modern interfaces</strong> that are visually appealing and user-friendly, ensuring that your website or application is easy to navigate and engaging for your target audience.
-                            </p>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 icon-box aos-init aos-animate" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <div class="icon"><i class="fa-solid fa-code text-white"></i></div>
-                            <h4 class="title text-primary">Full-Stack Web Development Services</h4>
-                            <p class="description text-dark">I offer <strong class="text-primary">flexible full-stack
-                                    web development
-                                    services</strong>, leveraging
-                                my knowledge of <strong class="text-primary">back-end programming languages</strong>
-                                such as PHP. Whether
-                                your project requires
-                                front-end development, back-end integration, or both, I can contribute to building
-                                scalable and efficient web
-                                applications.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3" id="projects"
-                data-aos="fade-up">
-                <div>
-                    <h4 class="text-primary fw-bold my-5">Projects</h4>
-                    <p class="text-secondary">
-                        Here are some of my completed projects, including <strong class="text-primary">side projects</strong> created to refine my coding and design skills, as well as professional projects developed as part of my role as an <strong class="text-primary">associate software engineer</strong> and <strong class="text-primary">lead designer</strong>.  
-                        <br><br>
-                        My experience includes working on <strong class="text-primary">real-world web development</strong> and <strong class="text-primary">UI/UX design projects</strong>, where I’ve delivered solutions that align with business goals and enhance user experiences. These opportunities have allowed me to grow as both a developer and a designer, equipping me with the expertise needed to contribute effectively to your team.  
-                    </p>
-                </div>                
-                <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                    <li class="tab filter-active" onclick="filterSelection('all')">All</li>
-                    <li class="tab" onclick="filterSelection('developed')">Developed and Designed</li>
-                    <li class="tab" onclick="filterSelection('designed')">Designed Only</li>
-                </ul>
-                <div class="container swiper my-5">
-                    <div class="slide-container">
-                        <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide filterDiv designed" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/1.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Clientele Satisfaction
-                                                Survey
-                                                System</h1>
-                                                <p class="text-secondary">Web App</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#clientelle"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/7.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">StayNest</h1>
-                                                <p class="text-secondary">UI/UX Design and Web App</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#stayNest"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-2s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_2.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">CSM Main Page Graphics Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#csm"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv developed" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/6.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Dictionary Chrome extension using
-                                                API
-                                            </h3>
-                                            <p class="text-secondary">Chrome Extension</p>
-                                        </div>
-
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#chromeExtension"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv developed animate__delay-2s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/4.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Trinitas Information
-                                                Management
-                                                System</h3>
-                                            <p class="text-secondary">Web App</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#trinitas"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv developed animate__delay-3s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/3.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Threadlore E-commerce Website
-                                            </h3>
-                                            <p class="text-secondary">Web App</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#threadLore"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-3s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_4.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Pre-Registration Page Graphics
-                                                Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#pre_register"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv developed animate__delay-4s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/2.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">Pure CSS and Javascript
-                                                MarketPlace Landing Page</h3>
-                                            <p class="text-secondary">Web App</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#marketPlaceApp"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-4s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_1.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">E-Voting Mobile Graphic Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#evoting"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-5s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_3.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">CSM Register Page Graphics Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#csm_register"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-6s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_5.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">SRS Organization Page
-                                                Graphics Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#srs"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card swiper-slide filterDiv designed animate__delay-7s" data-aos="fade-right">
-                                <div class="image-box">
-                                    <img src="./img/project_img/graphic_6.png" class="img-fluid" />
-                                </div>
-                                <div href="#" class="profile-details">
-                                    <div
-                                        class="name-job d-flex align-items-start justify-content-between w-100 flex-col">
-                                        <div>
-                                            <h3 class="name fw-semibold text-primary">SRS Office Page
-                                                Graphics Art
-                                            </h3>
-                                            <p class="text-secondary">Graphics</p>
-                                        </div>
-                                        <a href="#" class="btn btn-primary mb-4 rounded-circle px-7 py-2"
-                                            data-bs-toggle="modal" data-bs-target="#srsoffice"><i
-                                                class="fa-solid fa-arrow-trend-up"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-5">
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-                <section class="section gray-bg" id="experience" data-aos="fade-up">
-                    <div class="container">
-                        <h4 class="text-primary fw-bold my-5">Experience</h4>
-                        <p class="text-secondary">
-                            I have gained valuable experience working on various projects, including web development, UI/UX design, and graphic design. My roles have ranged from associate software engineer to lead designer, allowing me to develop a diverse skill set and contribute effectively to different aspects of project development.
-                        </p>
-                        <div class="resume-box">
-                            <ul>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <span class="time">August 2024 - Present</span>
-                                    <h5>Associate Software Engineer - XS Enterprises LLC</h5>
-                                    <p class="text-secondary">At XS Enterprises LLC, I work as an Associate Software Engineer where I am responsible for developing and maintaining SaaS web applications. My role involves collaborating with cross-functional teams to design, develop, and implement new features, ensuring the applications are scalable and efficient. I also focus on optimizing the user experience by integrating modern web technologies and best practices. Additionally, I contribute to code reviews, debugging, and troubleshooting to ensure high-quality software delivery. Aside from being a sofware engineer, I am also the lead designer and is in charge of designing our products.</p>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <span class="time">February 2024 - May 2024</span>
-                                    <h5>UI/UX Designer - Bicol University Information Communications Technology Office</h5>
-                                    <p class="text-secondary">During my time at Bicol University Information Communications Technology Office, I worked as a UI/UX Designer. I also helped with minimal front-end coding and designed the graphics of the assigned project. My responsibilities included designing user interfaces and user experiences for various web applications used within the university. I collaborated with developers to ensure that the designs were implemented accurately and provided a seamless user experience. Additionally, I conducted user research and usability testing to gather feedback and make necessary improvements to the designs.</p>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <span class="time">January 2020 - Present</span>
-                                    <h5>Digital Artist - Freelance</h5>
-                                    <p class="text-secondary">
-                                        As a freelance digital artist, I have been creating custom digital artwork for clients across various industries. My work includes illustrations, character designs, and graphic art for both personal and commercial use. I collaborate closely with clients to understand their vision and bring their ideas to life through detailed and creative digital illustrations. My expertise in using digital art tools and software allows me to deliver high-quality artwork that meets client expectations and enhances their projects.
-                                    </p>          
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-            <section id="contact" class="contact mb-5">
-                <div class="container">
-                    <div class="section-title">
-                        <h4 class="text-primary fw-bold my-5">Contact</h4>
-                        <p class="text-secondary">Feel free to send me an email if you wish to work with me in the
-                            future :></p>
-                    </div>
-                    <div class="row d-flex w-100 justify-content-between">
-                        <div class="col-lg-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up"
-                            data-aos-delay="100">
-                            <img src="./img/Message Sent.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch justify-content-center aos-init aos-animate"
-                            data-aos="fade-up" data-aos-delay="200">
-                            <div class="php-email-form form rounded-3">
-                                <div class="row my-3">
-                                    <div class="form-group col-md-6">
-                                        <label for="name" class="mb-2 text-secondary">Name</label>
-                                        <input type="text" name="name" class="form-control outline-none bg-transparent"
-                                            id="fullname" required="" placeholder="John Doe">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label for="name" class="mb-2 text-secondary">Email</label>
-                                        <input type="email" class="form-control outline-none bg-transparent"
-                                            name="email" id="email_id" required="" placeholder="johndoe@gmail.com">
-                                    </div>
-                                </div>
-                                <div class="form-group my-3">
-                                    <label for="name" class="mb-2 text-secondary">Message</label>
-                                    <textarea class="form-control outline-none bg-transparent" name="message" rows="10"
-                                        id="message" required="" placeholder="Type your message..."></textarea>
-                                </div>
-                                <div class="text-center mt-3 my-3">
-                                    <button class="btn btn-primary rounded-pill w-100 px-3 py-3" style="font-size: 15px;" onclick="sendMail()"
-                                        id="sendButton">Send
-                                        Message<i class="ms-2 fa-solid fa-paper-plane"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
-
-        <section class="" data-aos="fade-up">
-            <footer class="bg-body-tertiary outline-primary text-primary">
-                <div class="container p-4 pb-0 my-auto">
-                    <section class="mb-4">
-                        <a class="btn btn-outline-primary rounded btn-lg" href="https://www.facebook.com/ninnov.1128">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-
-                        <a class="btn btn-outline-primary rounded btn-lg"
-                            href="https://www.linkedin.com/in/ni%C3%B1a-gillian-villamin-28632727a/">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-
-                        <a class="btn btn-outline-primary rounded btn-lg" href="https://github.com/NoobNumi">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-
-                        <a class="btn btn-outline-primary rounded btn-lg"
-                            href="https://www.upwork.com/freelancers/~018372314f6c521661">
-                            <i class="fa-brands fa-upwork"></i>
-                        </a>
-                    </section>
-                </div>
-                <div class="container p-4">
-                    <!--Grid row-->
-                    <div class="row">
-                        <!--Grid column-->
-                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                            <a class="navbar-brand" href="/">
-                                <img src="./img/new_logo.png" alt="Logo" height="50"
-                                    class="d-inline-block align-text-top rounded mb-3">
-                            </a>
-                            <p class="text-secondary">
-                                Turning your dreams into digital magic, step by step. I'm here to team up and make
-                                your
-                                ideas shine bright. Send me an email, and let's craft something amazing together!
-                            </p>
-                        </div>
-                        <!--Grid column-->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                            <h5 class="text-uppercase fw-bold">Quick Links</h5>
-
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#home" class="text-decoration-none text-secondary">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#skills" class="text-decoration-none text-secondary">Skills</a>
-                                </li>
-                                <li>
-                                    <a href="#projects" class="text-decoration-none text-secondary">Projects</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                    <p class="text-secondary">Copyright &copy;
-                        <script>document.write(new Date().getFullYear())</script> <a href="#home"
-                            class="text-primary fw-semibold text-decoration-none"> NoobNumi
-                        </a> All Rights
-                        Reserved
-                    </p>
-                </div>
-            </footer>
+              <span class="main__scroll-text text-dark">Scroll</span>
+            </a>
+          </div>
         </section>
+
+        <section
+          class="d-flex flex-column justify-content-center w-100 mt-5 my-5 px-3 px-md-3"
+          id="skills"
+          data-aos="fade-up"
+        >
+          <h4 class="text-primary fw-bold mt-5">Skills</h4>
+          <ul
+            class="d-flex nav align-items-center justify-content-center w-100 gap-5 my-5"
+            id="dynamicList"
+          >
+            <!-- List items will be inserted here by JavaScript -->
+          </ul>
+        </section>
+
+        <section id="services" class="services" id="services">
+          <div class="container">
+            <div class="section-title">
+              <h4 class="text-primary fw-bold my-5">Services</h4>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 icon-box aos-init aos-animate"
+                data-aos="fade-up"
+              >
+                <div class="icon">
+                  <i class="fa-solid fa-computer text-white"></i>
+                </div>
+                <h4 class="title text-primary">
+                  Develop Dynamic and Static Webpages
+                </h4>
+                <p class="description text-dark">
+                  I specialize in creating both
+                  <strong class="text-primary">dynamic</strong> and
+                  <strong class="text-primary">static one-page websites</strong
+                  >, such as professional
+                  <strong class="text-primary">landing pages</strong> that are
+                  optimized for speed, performance, and user engagement. Whether
+                  you're looking for a static webpage for simplicity or a
+                  dynamic one for flexibility, I can build responsive and modern
+                  designs to meet your needs.
+                </p>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 icon-box aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="icon">
+                  <i class="fa-solid fa-paint-brush text-white"></i>
+                </div>
+                <h4 class="title text-primary">Corporate UI/UX Design</h4>
+                <p class="description text-dark">
+                  I specialize in creating
+                  <strong class="text-primary">corporate UI/UX designs</strong>
+                  that enhance user experiences and align with your brand’s
+                  identity.
+                  <br />
+                  I can design
+                  <strong class="text-primary"
+                    >clean and modern interfaces</strong
+                  >
+                  that are visually appealing and user-friendly, ensuring that
+                  your website or application is easy to navigate and engaging
+                  for your target audience.
+                </p>
+              </div>
+
+              <div
+                class="col-lg-4 col-md-6 icon-box aos-init aos-animate"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="icon">
+                  <i class="fa-solid fa-code text-white"></i>
+                </div>
+                <h4 class="title text-primary">
+                  Full-Stack Web Development Services
+                </h4>
+                <p class="description text-dark">
+                  I offer
+                  <strong class="text-primary"
+                    >flexible full-stack web development services</strong
+                  >, leveraging my knowledge of
+                  <strong class="text-primary"
+                    >back-end programming languages</strong
+                  >
+                  such as PHP. Whether your project requires front-end
+                  development, back-end integration, or both, I can contribute
+                  to building scalable and efficient web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3"
+          id="projects"
+          data-aos="fade-up"
+        >
+          <div>
+            <h4 class="text-primary fw-bold my-5">Projects</h4>
+            <p class="text-secondary">
+              Here are some of my completed projects, including
+              <strong class="text-primary">side projects</strong> created to
+              refine my coding and design skills. <br /><br />
+            </p>
+          </div>
+          <div class="project-list">
+            <div class="d-flex flex-lg-row gap-5 flex-column mb-5">
+              <div>
+                <img
+                  src="img/project_img/1.png"
+                  class="img-fluid object-fit-cover"
+                  alt="Project 1"
+                  style="cursor: pointer"
+                />
+              </div>
+              <div>
+                <p class="subtitle mb-2">SIDE PROJECT</p>
+                <h5 class="text-dark fw-bold mb-3">StayNest</h5>
+                <span class="custom-pill front-end">Front-end Developer</span>
+                <span class="custom-pill ui mb-3">UI / UX Designer</span>
+                <p
+                  class="fw-normal text-dark"
+                  style="font-size: 15px; font-weight: 300; line-height: 1.618"
+                >
+                  StayNest is a web-based hotel booking system that I designed
+                  as a personal project. It is a simple and clean design that I
+                  made to practice my skills in UI/UX design and front-end. It
+                  is designed using Figma and developed using React JS and
+                  Tailwind CSS.
+                </p>
+                <div class="tools d-flex gap-4 mt-2 mb-4">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042"
+                    height="30"
+                  />
+                </div>
+                <div class="d-flex mt-5 gap-3 flex-row">
+                  <a
+                    class="btn btn-primary rounded-md px-4 py-2 d-flex align-items-center"
+                    href="https://staynest-pearl.vercel.app/"
+                    target="_blankñ"
+                  >
+                    <span class="me-2">Visit Site</span>
+                  </a>
+                  <a
+                    class="btn btn-outline-primary rounded-md px-4 py-2 d-flex align-items-center"
+                    href="https://www.figma.com/design/iONViAPq3jGCZDykc6AWnz/StayNest?node-id=0-1&t=qn33AYcuFZ6BBvEf-1"
+                    target="_blankñ"
+                  >
+                    <i class="fa-brands fa-figma"></i>
+                    <span class="ms-2">Figma Link</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-lg-row gap-5 flex-column mt-5">
+              <div>
+                <img
+                  src="img/project_img/2.png"
+                  class="img-fluid object-fit-cover"
+                  alt="Project 2"
+                  style="cursor: pointer"
+                />
+              </div>
+              <div>
+                <p class="subtitle mb-2">SIDE PROJECT</p>
+                <h5 class="text-dark fw-bold mb-3">
+                  Threadlore E-commerce Platform
+                </h5>
+                <span class="custom-pill full-stack mb-3"
+                  >Full-stack Developer</span
+                >
+                <p
+                  class="fw-normal text-dark"
+                  style="font-size: 15px; font-weight: 300; line-height: 1.618"
+                >
+                  Threadlore is an e-commerce platform that I developed as a
+                  personal project. It is a full-stack web application that
+                  allows users to browse and purchase clothes. The platform is
+                  developed using TailwindCSS, Php, and MySQL. This project is
+                  still in progress.
+                </p>
+                <div class="tools d-flex gap-4 mt-2 mb-4">
+                  <img
+                    src="https://www.svgrepo.com/show/354099/mysql.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/768px-Tailwind_CSS_Logo.svg.png?20230715030042"
+                    height="30"
+                  />
+                </div>
+                <div class="d-flex mt-5 gap-3 flex-row">
+                  <a
+                    class="btn btn-outline-primary rounded-md px-4 py-2 d-flex align-items-center"
+                    href="https://github.com/NoobNumi/e-commerce"
+                    target="_blankñ"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                    <span class="ms-2">Github Repository</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-lg-row gap-5 flex-column mt-5">
+              <div>
+                <img
+                  src="img/project_img/3.png"
+                  class="img-fluid object-fit-cover"
+                  alt="Project 3"
+                  style="cursor: pointer"
+                />
+              </div>
+              <div>
+                <p class="subtitle mb-2">INTERNSHIP REQUIREMENT</p>
+                <h5 class="text-dark fw-bold mb-3">
+                  Clientele Satisfaction Measurement
+                </h5>
+                <span class="custom-pill ui mb-3">UI / UX Designer</span>
+                <p
+                  class="fw-normal text-dark"
+                  style="font-size: 15px; font-weight: 300; line-height: 1.618"
+                >
+                  CSM is a web-based survey system developed during our
+                  internship. It gathers client feedback to measure satisfaction
+                  with services provided by Bicol University Offices. I designed
+                  the user interface and experience, ensuring it is intuitive
+                  and user-friendly.
+                </p>
+                <div class="tools d-flex gap-4 mt-2 mb-4">
+                  <img
+                    src="https://www.svgrepo.com/show/354099/mysql.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg"
+                    height="30"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                    height="30"
+                  />
+                </div>
+                <div class="d-flex mt-5 gap-3 flex-row">
+                  <a
+                    class="btn btn-primary rounded-md px-4 py-2 d-flex align-items-center"
+                    href="https://survey.bicol-u.edu.ph/"
+                    target="_blankñ"
+                  >
+                    <span class="me-2">Visit Site</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section gray-bg" id="experience" data-aos="fade-up">
+          <div class="container">
+            <h4 class="text-primary fw-bold my-5">Experience</h4>
+            <p class="text-secondary">
+              I have gained valuable experience working on various projects,
+              including web development, UI/UX design, and graphic design. My
+              roles have ranged from associate software engineer to lead
+              designer, allowing me to develop a diverse skill set and
+              contribute effectively to different aspects of project
+              development.
+            </p>
+            <div class="resume-box">
+              <ul>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <span class="time">August 2024 - Present</span>
+                  <h5>Associate Software Engineer - XS Enterprises LLC</h5>
+                  <p class="text-secondary">
+                    At XS Enterprises LLC, I work as an Associate Software
+                    Engineer where I am responsible for developing and
+                    maintaining SaaS web applications. My role involves
+                    collaborating with cross-functional teams to design,
+                    develop, and implement new features, ensuring the
+                    applications are scalable and efficient. I also focus on
+                    optimizing the user experience by integrating modern web
+                    technologies and best practices. Additionally, I contribute
+                    to code reviews, debugging, and troubleshooting to ensure
+                    high-quality software delivery. Aside from being a sofware
+                    engineer, I am also the lead designer and is in charge of
+                    designing our products.
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <span class="time">February 2024 - May 2024</span>
+                  <h5>
+                    UI/UX Designer - Bicol University Information Communications
+                    Technology Office
+                  </h5>
+                  <p class="text-secondary">
+                    During my time at Bicol University Information
+                    Communications Technology Office, I worked as a UI/UX
+                    Designer. I also helped with minimal front-end coding and
+                    designed the graphics of the assigned project. My
+                    responsibilities included designing user interfaces and user
+                    experiences for various web applications used within the
+                    university. I collaborated with developers to ensure that
+                    the designs were implemented accurately and provided a
+                    seamless user experience. Additionally, I conducted user
+                    research and usability testing to gather feedback and make
+                    necessary improvements to the designs.
+                  </p>
+                </li>
+                <li>
+                  <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                  <span class="time">January 2020 - Present</span>
+                  <h5>Digital Artist - Freelance</h5>
+                  <p class="text-secondary">
+                    As a freelance digital artist, I have been creating custom
+                    digital artwork for clients across various industries. My
+                    work includes illustrations, character designs, and graphic
+                    art for both personal and commercial use. I collaborate
+                    closely with clients to understand their vision and bring
+                    their ideas to life through detailed and creative digital
+                    illustrations. My expertise in using digital art tools and
+                    software allows me to deliver high-quality artwork that
+                    meets client expectations and enhances their projects.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <footer class="bg-body-tertiary outline-primary text-primary">
+          <div
+            class="text-center p-4"
+            style="background-color: rgba(0, 0, 0, 0.05)"
+          >
+            <p class="text-secondary">
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              <a
+                href="#home"
+                class="text-primary fw-semibold text-decoration-none"
+              >
+                Niña Gillian Villamin
+              </a>
+              All Rights Reserved
+            </p>
+          </div>
+        </footer>
+      </section>
     </main>
     <script src="./assets/darkMode.js"></script>
     <script src="./assets/watermark.min.js"></script>
     <script src="./assets/functionalities.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="./assets/animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/bootstrap.bundle.js"></script>
     <script src="./assets/populate-data.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./assets/swiper.js"></script>
     <script src="./assets/display_project.js"></script>
     <script src="./assets/sweetalert2.all.min.js"></script>
     <script type="text/javascript" src="./assets/send_mail.js"></script>
     <script src="./assets/navbar.js"></script>
     <script src="./assets/copy-to-clipboard.js"></script>
-</body>
-
+  </body>
 </html>

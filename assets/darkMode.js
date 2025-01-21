@@ -1,8 +1,5 @@
 const checkboxes = Array.from(document.querySelectorAll(".theme__toggle"));
 const darkText = document.querySelectorAll(".text-dark");
-const formControls = document.querySelectorAll("input, textarea");
-const contactForm = document.querySelector(".php-email-form");
-const card = document.querySelectorAll(".card");
 const footer = document.querySelector("footer");
 const offCanvas = document.querySelector(".offcanvas");
 const resume = document.querySelector(".resume-box");
@@ -16,26 +13,15 @@ function applyDarkMode() {
     text.classList.add("text-secondary");
     text.classList.remove("text-dark");
   });
-  formControls.forEach((element) => {
-    element.classList.add("dark");
-  });
-  card.forEach((element) => {
-    element.classList.add("bg-dark");
-  });
   document
     .querySelector(".theme__icon")
     .classList.add("theme__icon--transition");
-  contactForm.classList.add("bg-dark");
   footer.classList.add("bg-dark");
   footer.classList.remove("bg-body-tertiary");
   offCanvas.classList.add("bg-dark");
   resume.classList.add("bg-dark");
   navbar.classList.add("bg-dark");
   navbar.classList.remove("bg-white");
-
-  document.querySelector('.form input[type="text"]').style.color = "#FFFFFF";
-  document.querySelector('.form input[type="email"]').style.color = "#FFFFFF";
-  document.querySelector(".form textarea").style.color = "#FFFFFF";
 }
 
 // Function to apply the light mode styles
@@ -46,26 +32,15 @@ function applyLightMode() {
     text.classList.remove("text-secondary");
     text.classList.add("text-dark");
   });
-  formControls.forEach((element) => {
-    element.classList.remove("dark");
-  });
-  card.forEach((element) => {
-    element.classList.remove("bg-dark");
-  });
   document
     .querySelector(".theme__icon")
     .classList.remove("theme__icon--transition");
-  contactForm.classList.remove("bg-dark");
   footer.classList.remove("bg-dark");
   footer.classList.add("bg-body-tertiary");
   offCanvas.classList.remove("bg-dark");
   resume.classList.remove("bg-dark");
   navbar.classList.remove("bg-dark");
   navbar.classList.add("bg-white");
-
-  document.querySelector('.form input[type="text"]').style.color = "#333333";
-  document.querySelector('.form input[type="email"]').style.color = "#333333";
-  document.querySelector(".form textarea").style.color = "#333333";
 }
 
 // Get the stored theme preference from local storage
