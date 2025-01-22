@@ -258,7 +258,6 @@
                     type="email"
                     id="emailInput"
                     class="form-control rounded-start-2 rounded-end-0 border-0"
-                    style="font-size: 14px; width: auto"
                     value="ninagillianvillamin1128@gmail.com"
                     disabled
                   />
@@ -280,6 +279,7 @@
                       class="size-6"
                       width="20"
                       height="20"
+                      style="color: #6c757d"
                     >
                       <path
                         stroke-linecap="round"
@@ -419,9 +419,8 @@
         <section
           class="d-flex flex-column justify-content-center w-10 my-5 px-3 px-md-3"
           id="projects"
-          data-aos="fade-up"
         >
-          <div>
+          <div data-aos="fade-up">
             <h4 class="text-primary fw-bold my-5">Projects</h4>
             <p class="text-secondary">
               Here are some of my completed projects, including
@@ -430,11 +429,14 @@
             </p>
           </div>
           <div class="project-list">
-            <div class="d-flex flex-lg-row gap-5 flex-column mb-5">
+            <div
+              class="d-flex flex-lg-row gap-5 flex-column mb-5"
+              data-aos="fade-up"
+            >
               <div>
                 <img
                   src="img/project_img/1.png"
-                  class="img-fluid object-fit-cover"
+                  class="img-fluid object-fit-cover cursor-pointer"
                   alt="Project 1"
                   style="cursor: pointer"
                 />
@@ -488,7 +490,10 @@
               </div>
             </div>
 
-            <div class="d-flex flex-lg-row gap-5 flex-column mt-5">
+            <div
+              class="d-flex flex-lg-row gap-5 flex-column mt-5"
+              data-aos="fade-up"
+            >
               <div>
                 <img
                   src="img/project_img/2.png"
@@ -542,7 +547,10 @@
               </div>
             </div>
 
-            <div class="d-flex flex-lg-row gap-5 flex-column mt-5">
+            <div
+              class="d-flex flex-lg-row gap-5 flex-column mt-5"
+              data-aos="fade-up"
+            >
               <div>
                 <img
                   src="img/project_img/3.png"
@@ -597,7 +605,10 @@
               </div>
             </div>
 
-            <div class="d-flex flex-lg-row gap-5 flex-column mt-5">
+            <div
+              class="d-flex flex-lg-row gap-5 flex-column mt-5"
+              data-aos="fade-up"
+            >
               <div>
                 <img
                   src="img/project_img/4.png"
@@ -771,8 +782,6 @@
       </section>
     </main>
     <script src="./assets/darkMode.js"></script>
-    <script src="./assets/watermark.min.js"></script>
-    <script src="./assets/functionalities.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
@@ -793,10 +802,17 @@
     <script type="text/javascript" src="./assets/send_mail.js"></script>
     <script src="./assets/navbar.js"></script>
     <script src="./assets/copy-to-clipboard.js"></script>
-    <script src="https://www.elevateweb.co.uk/wp-content/themes/radial/jquery.elevatezoom.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/2.2.3/jquery.elevatezoom.min.js"
+      integrity="sha512-UH428GPLVbCa8xDVooDWXytY8WASfzVv3kxCvTAFkxD2vPjouf1I3+RJ2QcSckESsb7sI+gv3yhsgw9ZhM7sDw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      $(".project-list img.img-fluid").elevateZoom({ zoomType: "inner" });
-      $(".project-list img.img-fluid").css("cursor", "pointer");
+      $(".project-list img.img-fluid").elevateZoom({
+        zoomType: "inner",
+        cursor: "zoom-in",
+      });
     </script>
   </body>
 </html>

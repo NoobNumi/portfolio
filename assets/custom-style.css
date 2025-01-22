@@ -517,6 +517,11 @@ a {
   animation: scroll-down 3s infinite;
 }
 
+#emailInput {
+  font-family: "Source Code Pro", serif;
+  font-size: 14px !important;
+}
+
 /* Animate scroll icon */
 @keyframes scroll-down {
   0%,
@@ -647,10 +652,6 @@ a {
   left: 20px;
   border-left: 1px dashed #5271ff;
   bottom: 0;
-}
-
-#emailInput {
-  font-family: "Source Code Pro", serif;
 }
 
 .subtitle {
