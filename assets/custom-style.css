@@ -411,6 +411,7 @@ iframe,
 .theme__toggle,
 .theme__toggle-wrap {
   position: relative;
+  cursor: pointer;
 }
 
 .theme__toggle,
