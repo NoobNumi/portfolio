@@ -640,6 +640,30 @@ a {
   border-radius: 20px;
   font-weight: 600;
 }
+.resume-box .job-type {
+  font-size: 10px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.resume-box .full-time {
+  background-color: #eaf3ff;
+  color: #5271ff;
+}
+.resume-box .part-time {
+  background-color: #d8f9f5;
+  color: #3bb666;
+}
+.resume-box .internship {
+  background-color: #fceada;
+  color: #d3932b;
+}
+.resume-box .freelance {
+  background-color: #fce9d7;
+  color: #e54f40;
+}
 .resume-box h5 {
   font-weight: 700;
   color: #5271ff;
