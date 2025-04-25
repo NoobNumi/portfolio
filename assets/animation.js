@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const words = ["FRONT-END WEB DEVELOPER", "UI/UX Designer"];
+const words = ["FRONT-END WEB DEVELOPER", "UI/UX DESIGNER", "FULL-STACK DEVELOPER"];
 let i = 0;
 let timer;
 let delayAfterTyping = 1000; // 1-second delay after typing
